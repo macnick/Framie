@@ -1,3 +1,5 @@
+@import "reset";
+
 * {
   box-sizing: border-box;
 }
@@ -6,6 +8,7 @@ body {
   background-color: lightgreen;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 15px 5px;
 }
 
 .container {
@@ -35,5 +38,12 @@ $cols: 12;
   }
   .col-offset-#{$i} {
     margin-left: 100% / $cols * $i;
+  }
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: $i * 2rem;
+    line-height: $i * 2.6rem;
   }
 }

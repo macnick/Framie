@@ -1,2 +1,3 @@
 # Framie
-Grid-based framework
+
+A CSS Grid-based framework made with SASS
