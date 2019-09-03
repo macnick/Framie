@@ -26,7 +26,7 @@
   top: 60px;
   z-index: 1;
 }
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .hero-text {
     font-size: 42px;
   }
@@ -50,3 +50,23 @@ h2 {
   width: 90%;
   height: auto;
 }
+.ac {
+  align-self: center;
+}
+.col-md-12 {
+  padding: 0 20px;
+}
+.site-info {
+  color: #1c2746;
+  font-size: 12px;
+  bottom: 0;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.map {
+  width: 100%;
+}
+/* div {
+  border: 1px solid blue;
+} */
