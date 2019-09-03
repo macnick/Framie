@@ -2,20 +2,20 @@
 
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   background-color: lightgreen;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 15px 5px;
+  margin: 0;
 }
 
 .container {
-  background-color: lightblue;
   width: calc(100%-12rem);
   max-width: 70rem;
-  margin: 0 auto;
+  margin: 0;
 }
 
 div[class^="col-"] {
@@ -29,21 +29,239 @@ div[class^="col-"] {
   display: flex;
   flex-wrap: wrap;
 }
+.pict {
+  width: 100%;
+}
+// $cols: 12;
 
-$cols: 12;
+// @for $i from 1 through $cols {
+//   .col-#{$i} {
+//     flex: 0 0 100% / $cols * $i;
+//   }
+//   .col-offset-#{$i} {
+//     margin-left: 100% / $cols * $i;
+//   }
+// }
 
-@for $i from 1 through $cols {
-  .col-#{$i} {
-    flex: 0 0 100% / $cols * $i;
+// @for $i from 1 through 6 {
+//   h#{$i} {
+//     font-size: $i * 2rem;
+//     line-height: $i * 2.6rem;
+//   }
+// }
+
+/* DISPLAY */
+.d-flex {
+  display: flex !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-inline {
+  display: inline !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.hidden,
+.d-hidden,
+.d-none {
+  display: none !important;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  .navbar-brand {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: bold;
+    display: block;
+    padding: 0.4rem 1rem;
+    a {
+      transition: all 0.3s ease;
+    }
+    a:hover {
+      text-decoration: none;
+    }
   }
-  .col-offset-#{$i} {
-    margin-left: 100% / $cols * $i;
+  .nav-toggler {
+    display: block;
+    border: 0;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    i {
+      pointer-events: none;
+    }
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    .nav-item {
+      width: 100%;
+      .nav-link {
+        white-space: nowrap;
+        transition: all 0.3s ease;
+        display: block;
+        padding: 0.4rem 0.8rem;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .nav-form {
+      flex: none;
+      display: flex;
+      align-items: center;
+      order: -1;
+      padding: 0.25rem;
+      width: 100%;
+      .nav-textbox {
+        line-height: 1.5rem;
+        color: inherit;
+        box-sizing: border-box;
+        width: 100%;
+        border: 1px solid bgcolor("gray");
+        padding: 0.2rem 0.8rem;
+      }
+      .nav-btn {
+        color: currentColor;
+        padding: 0.2rem 0.8rem;
+      }
+    }
+  }
+  .collapsed {
+    display: none !important;
+  }
+  .expanded {
+    display: flex !important;
   }
 }
 
-@for $i from 1 through 6 {
-  h#{$i} {
-    font-size: $i * 2rem;
-    line-height: $i * 2.6rem;
+/* WIDTH AND HEIGHT */
+$percentage: 0;
+@while $percentage <= 100 {
+  .width-#{$percentage} {
+    width: $percentage * 1%;
+  }
+  .height-#{$percentage} {
+    height: $percentage * 1%;
+  }
+  $percentage: $percentage + 10;
+}
+
+/* GRID ELEMENTS */
+.container {
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1310px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ROW */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/* RESPONSIVE ELEMENTS */
+/* COLUMNS */
+[class*="col-"] {
+  width: 100%;
+}
+
+@for $i from 1 through 12 {
+  .col-xs-#{$i} {
+    width: $i/12 * 100% !important;
+  }
+}
+
+/* BREAKPOINTS */
+$breakpoints: (("sm", 576px), ("md", 768px), ("lg", 992px), ("xl", 1200px));
+
+@each $breakpoint, $min-width in $breakpoints {
+  @media (min-width: $min-width) {
+    @for $i from 1 through 12 {
+      .col-#{$breakpoint}-#{$i} {
+        width: $i/12 * 100% !important;
+      }
+    }
+  }
+}
+
+/* RESPONSIVE NAVBAR */
+.navbar-expand-xs {
+  .nav {
+    visibility: visible !important;
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: initial;
+    .nav-form {
+      order: 0;
+      width: 250px;
+    }
+  }
+  .nav-toggler {
+    display: none;
+  }
+}
+
+@each $breakpoint, $min-width in $breakpoints {
+  @media (min-width: $min-width) {
+    .navbar-expand-#{$breakpoint} {
+      .nav {
+        visibility: visible !important;
+        display: flex !important;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: initial;
+        .nav-form {
+          order: 0;
+          width: 250px;
+        }
+      }
+      .nav-toggler {
+        display: none;
+      }
+    }
+  }
+}
+
+/* OFFSETS */
+@for $i from 1 through 12 {
+  .offset-xs-#{$i} {
+    margin-left: $i/12 * 100% !important;
+  }
+}
+
+@each $breakpoint, $min-width in $breakpoints {
+  @media (min-width: $min-width) {
+    @for $i from 1 through 12 {
+      .offset-#{$breakpoint}-#{$i} {
+        margin-left: $i/12 * 100% !important;
+      }
+    }
   }
 }
