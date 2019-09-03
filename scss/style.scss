@@ -31,23 +31,6 @@ div[class^="col-"] {
 .pict {
   width: 100%;
 }
-// $cols: 12;
-
-// @for $i from 1 through $cols {
-//   .col-#{$i} {
-//     flex: 0 0 100% / $cols * $i;
-//   }
-//   .col-offset-#{$i} {
-//     margin-left: 100% / $cols * $i;
-//   }
-// }
-
-// @for $i from 1 through 6 {
-//   h#{$i} {
-//     font-size: 2rem / $i;
-//     line-height: 2.6rem / $i;
-//   }
-// }
 
 /* DISPLAY */
 .d-flex {

@@ -56,7 +56,7 @@ h2 {
 .col-md-12 {
   padding: 0 20px;
 }
-.site-info {
+.footer-info {
   color: #1c2746;
   font-size: 12px;
   bottom: 0;
@@ -67,6 +67,9 @@ h2 {
 .map {
   width: 100%;
 }
-/* div {
-  border: 1px solid blue;
-} */
+
+.logo img {
+  width: 90%;
+  height: auto;
+  object-fit: scale-down;
+}
