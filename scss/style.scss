@@ -6,7 +6,6 @@
 }
 
 body {
-  background-color: lightgreen;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
@@ -19,7 +18,7 @@ body {
 }
 
 div[class^="col-"] {
-  background: pink;
+  // background: pink;
   border: 1px solid red;
   text-align: center;
   padding: 1rem 0;
@@ -117,37 +116,37 @@ div[class^="col-"] {
     list-style: none;
     width: 100%;
     .nav-item {
-      width: 100%;
       .nav-link {
         white-space: nowrap;
         transition: all 0.3s ease;
         display: block;
-        padding: 0.4rem 0.8rem;
+        padding: 0.2rem 0.9rem;
         &:hover {
           text-decoration: none;
+          color: #900;
         }
       }
     }
-    .nav-form {
-      flex: none;
-      display: flex;
-      align-items: center;
-      order: -1;
-      padding: 0.25rem;
-      width: 100%;
-      .nav-textbox {
-        line-height: 1.5rem;
-        color: inherit;
-        box-sizing: border-box;
-        width: 100%;
-        border: 1px solid bgcolor("gray");
-        padding: 0.2rem 0.8rem;
-      }
-      .nav-btn {
-        color: currentColor;
-        padding: 0.2rem 0.8rem;
-      }
-    }
+    // .nav-form {
+    //   flex: none;
+    //   display: flex;
+    //   align-items: center;
+    //   order: -1;
+    //   padding: 0.25rem;
+    //   width: 100%;
+    //   .nav-textbox {
+    //     line-height: 1.5rem;
+    //     color: inherit;
+    //     box-sizing: border-box;
+    //     width: 100%;
+    //     border: 1px solid bgcolor("gray");
+    //     padding: 0.2rem 0.8rem;
+    //   }
+    //   .nav-btn {
+    //     color: currentColor;
+    //     padding: 0.2rem 0.8rem;
+    //   }
+    // }
   }
   .collapsed {
     display: none !important;
