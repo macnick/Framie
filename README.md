@@ -26,14 +26,11 @@ A simple CSS Grid-based framework made with SASS. It works seamlessly with Grid 
 </div>
 ```
 
-## Author
-
-- Nick Haralampopoulos https://github.com/macnick
 
 ## Installation
 
-Donwload the 
+Donwload the files in scss folder. Modify if needed and compile using sass. Use the classes in your HTML. 
 
-## The Website
+## Author
 
-Follow the link to acess to the Website: https://macnick.github.com/Using-Bootstrap/
+- Nick Haralampopoulos https://github.com/macnick
