@@ -104,13 +104,14 @@ body {
   margin: 0; }
 
 div[class^="col-"] {
-  border: 1px solid red;
   text-align: center;
   padding: 1rem 0; }
 
+/* ROW */
 .row {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 100%; }
 
 .pict {
   width: 100%; }
@@ -259,12 +260,6 @@ div[class^="col-"] {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto; }
-
-/* ROW */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%; }
 
 /* RESPONSIVE ELEMENTS */
 /* COLUMNS */
