@@ -303,7 +303,7 @@ div[class^="col-"] {
   width: 100% !important; }
 
 /* BREAKPOINTS */
-@media (min-width: 576px) {
+@media (min-width: 568px) {
   .col-sm-1 {
     width: 8.3333333333% !important; }
 
@@ -339,7 +339,7 @@ div[class^="col-"] {
 
   .col-sm-12 {
     width: 100% !important; } }
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .col-md-1 {
     width: 8.3333333333% !important; }
 
@@ -375,7 +375,7 @@ div[class^="col-"] {
 
   .col-md-12 {
     width: 100% !important; } }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .col-lg-1 {
     width: 8.3333333333% !important; }
 
@@ -411,42 +411,6 @@ div[class^="col-"] {
 
   .col-lg-12 {
     width: 100% !important; } }
-@media (min-width: 1200px) {
-  .col-xl-1 {
-    width: 8.3333333333% !important; }
-
-  .col-xl-2 {
-    width: 16.6666666667% !important; }
-
-  .col-xl-3 {
-    width: 25% !important; }
-
-  .col-xl-4 {
-    width: 33.3333333333% !important; }
-
-  .col-xl-5 {
-    width: 41.6666666667% !important; }
-
-  .col-xl-6 {
-    width: 50% !important; }
-
-  .col-xl-7 {
-    width: 58.3333333333% !important; }
-
-  .col-xl-8 {
-    width: 66.6666666667% !important; }
-
-  .col-xl-9 {
-    width: 75% !important; }
-
-  .col-xl-10 {
-    width: 83.3333333333% !important; }
-
-  .col-xl-11 {
-    width: 91.6666666667% !important; }
-
-  .col-xl-12 {
-    width: 100% !important; } }
 /* RESPONSIVE NAVBAR */
 .navbar-expand-xs .nav {
   visibility: visible !important;
@@ -460,7 +424,7 @@ div[class^="col-"] {
 .navbar-expand-xs .nav-toggler {
   display: none; }
 
-@media (min-width: 576px) {
+@media (min-width: 568px) {
   .navbar-expand-sm .nav {
     visibility: visible !important;
     display: flex !important;
@@ -472,7 +436,7 @@ div[class^="col-"] {
       width: 250px; }
   .navbar-expand-sm .nav-toggler {
     display: none; } }
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .navbar-expand-md .nav {
     visibility: visible !important;
     display: flex !important;
@@ -484,7 +448,7 @@ div[class^="col-"] {
       width: 250px; }
   .navbar-expand-md .nav-toggler {
     display: none; } }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .navbar-expand-lg .nav {
     visibility: visible !important;
     display: flex !important;
@@ -495,18 +459,6 @@ div[class^="col-"] {
       order: 0;
       width: 250px; }
   .navbar-expand-lg .nav-toggler {
-    display: none; } }
-@media (min-width: 1200px) {
-  .navbar-expand-xl .nav {
-    visibility: visible !important;
-    display: flex !important;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: initial; }
-    .navbar-expand-xl .nav .nav-form {
-      order: 0;
-      width: 250px; }
-  .navbar-expand-xl .nav-toggler {
     display: none; } }
 /* OFFSETS */
 .offset-xs-1 {
@@ -545,7 +497,7 @@ div[class^="col-"] {
 .offset-xs-12 {
   margin-left: 100% !important; }
 
-@media (min-width: 576px) {
+@media (min-width: 568px) {
   .offset-sm-1 {
     margin-left: 8.3333333333% !important; }
 
@@ -581,7 +533,7 @@ div[class^="col-"] {
 
   .offset-sm-12 {
     margin-left: 100% !important; } }
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .offset-md-1 {
     margin-left: 8.3333333333% !important; }
 
@@ -617,7 +569,7 @@ div[class^="col-"] {
 
   .offset-md-12 {
     margin-left: 100% !important; } }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .offset-lg-1 {
     margin-left: 8.3333333333% !important; }
 
@@ -652,42 +604,6 @@ div[class^="col-"] {
     margin-left: 91.6666666667% !important; }
 
   .offset-lg-12 {
-    margin-left: 100% !important; } }
-@media (min-width: 1200px) {
-  .offset-xl-1 {
-    margin-left: 8.3333333333% !important; }
-
-  .offset-xl-2 {
-    margin-left: 16.6666666667% !important; }
-
-  .offset-xl-3 {
-    margin-left: 25% !important; }
-
-  .offset-xl-4 {
-    margin-left: 33.3333333333% !important; }
-
-  .offset-xl-5 {
-    margin-left: 41.6666666667% !important; }
-
-  .offset-xl-6 {
-    margin-left: 50% !important; }
-
-  .offset-xl-7 {
-    margin-left: 58.3333333333% !important; }
-
-  .offset-xl-8 {
-    margin-left: 66.6666666667% !important; }
-
-  .offset-xl-9 {
-    margin-left: 75% !important; }
-
-  .offset-xl-10 {
-    margin-left: 83.3333333333% !important; }
-
-  .offset-xl-11 {
-    margin-left: 91.6666666667% !important; }
-
-  .offset-xl-12 {
     margin-left: 100% !important; } }
 
 /*# sourceMappingURL=style.css.map */
