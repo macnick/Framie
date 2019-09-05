@@ -10,7 +10,7 @@ A simple CSS Grid-based framework made with SASS. It works seamlessly with Grid 
 
 ## Example page built with Framie
 
-[Ask.com clone page](https://macnick.github.com/Framie/)
+[Ask.com clone page](https://macnick.github.io/Framie/)
 
 ## Usage
 
